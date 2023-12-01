@@ -42,8 +42,12 @@ void tokeniseRecord(const char *input, const char *delimiter,
 
 // Complete the main function
 int main() {
+    char *options; // change while to while (x = false) and put x = true in loop so that it terminates and not continues infinitely
     while(1){
-        printf("A: Specify the filename to be imported – you need to check that the file opened correctly.\n B: Display the total number of records in the file\n C: Find the date and time of the timeslot with the fewest steps\n D: Find the data and time of the timeslot with the largest number of steps\n E: Find the mean step count of all the records in the file\n F: Find the longest continuous period where the step count is above 500 steps\n Q: Exit "");
+        printf("A: Specify the filename to be imported.\n B: Display the total number of records in the file\n C: Find the date and time of the timeslot with the fewest steps\n D: Find the data and time of the timeslot with the largest number of steps\n E: Find the mean step count of all the records in the file\n F: Find the longest continuous period where the step count is above 500 steps\n Q: Exit ");
+        printf("Enter choice: ");
+        scanf("%c", options);
+
     }
         
 
